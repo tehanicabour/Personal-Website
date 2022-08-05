@@ -1,0 +1,132 @@
+/*Main CSS Stylesheet*/
+body, html {
+    height: 100%;
+    background-color: black;
+    scroll-behavior: smooth;
+    cursor: none;
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+/*Icons*/
+/*----------------------------CHANGE UP----------------------------*/
+ul {
+  padding: 0px;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+
+li a {
+  margin: 0 45px;
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+
+li a:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ff6666;
+  transition: .5s;
+  z-index: -1;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff6666;
+}
+
+li a:hover {
+  color: #ff6666;
+  box-shadow: 0 0 5px #ff6666;
+  text-shadow: 0 0 5px #ff6666;
+}
+
+
+#fade-in-icons {
+  opacity: 0;
+  animation: fadeInIcons 2s;
+  -webkit-animation: fadeInIcons 2s;
+  -moz-animation: fadeInIcons 2s;
+  -o-animation: fadeInIcons 2s;
+  -ms-animation: fadeInIcons 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@-moz-keyframes fadeInIcons {
+  0% { opacity: 0; }
+  100% { opacity: 0.5; }
+}
+
+@-webkit-keyframes fadeInIcons {
+  0% { opacity: 0; }
+  100% { opacity: 0.5; }
+}
+
+@-o-keyframes fadeInIcons {
+  0% { opacity: 0; }
+  100% { opacity: 0.5; }
+}
+
+@-ms-keyframes fadeInIcons {
+  0% { opacity: 0; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes fadeInIcons {
+  0% { opacity: 0; }
+  100% { opacity: 0.5; }
+}
+
+/*Cursor Animation*/
+/*----------------------------CHANGE UP----------------------------*/
+.cursor-inner,
+.cursor-outer {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+.cursor-inner {
+    width: 9px;
+    height: 9px;
+}
+
+.cursor-outer {
+    width: 35px;
+    height: 35px;
+}

@@ -1,0 +1,476 @@
+/*Web Projects Page*/
+.extra-space {
+  height:12rem;
+}
+/*Home Button*/
+#tc-homelogo {
+  position: sticky;
+  top: 40px;
+  left: 15px;
+  z-index:3;
+  font-size: 2.5rem;
+  text-align: left;
+  width: 4rem;
+  opacity: 50%;
+}
+
+.top-bar {
+  position: fixed;
+  background-color: black;
+  top: 0px;
+  height: 10%;
+  width: 100%;
+  z-index:2;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  #tc-homelogo {
+    width: 20%;
+    height: auto;
+  }
+}
+
+/*------------check up on whether can combine----------------*/
+#project-title {
+  position: relative;
+  opacity: 50%;
+  padding-top: 4rem;
+  text-transform: uppercase;
+  letter-spacing: .9rem;
+}
+.page-title {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 10%;
+}
+
+h3 {
+  font-family: 'Work Sans', sans-serif;
+  opacity: 65%;
+  font-weight: bold;
+  color: white;
+}
+
+.skills_links {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+a{
+  color: white;
+}
+@media only screen and (max-width: 1000px) {
+  p {
+    font-size: .75em;
+  }
+
+  .intro-text {
+    padding: 2rem;
+  }
+}
+/*Intro Section Above Projects*/
+.intro {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 4rem;
+  padding-top: 10rem;
+}
+
+.intro-text {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding: 0rem 10rem 4rem;
+  font-size: 1.7rem;
+  font-family: 'Work Sans', sans-serif;
+  color: grey;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .intro {
+    padding: 5rem 2rem 0rem;
+
+  }
+  .intro-text {
+    padding: 3rem;
+  }
+}
+
+/*Grid Sections (of projects and achievements)*/
+.projects {
+}
+
+.sub-container {
+  padding: 5rem;
+  padding-bottom: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  color: black;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.box1, .box2, .box3 {
+  padding: 2rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  color: black;
+  opacity: 80%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sub-container {
+    padding:2rem 1rem 2rem;
+  }
+}
+
+
+/*-----------slightly change colors of gradients--------------*/
+.box1 {
+  background-image: linear-gradient(135deg, #7bbef5 10%, #c9e6ab 100%);
+}
+
+.box2 {
+  background-image: linear-gradient(135deg, #b0affa 10%, #f6d2da 100%);
+}
+
+.box3 {
+  background-image: linear-gradient(135deg, #f690af 10%, #f6e05f 100%);
+}
+
+/*----------look into removing ul by imposing li a as only requirements for glow on hover?-----------*/
+.github-icon {
+  position: relative;
+  top: -60%;
+  left: 95%;
+  width: 2%;
+  height: auto;
+}
+
+.box-contents {
+  height: 100%;
+  display: contents;
+}
+
+.box-title {
+  /*adjust for small screen size*/
+}
+
+.lang {
+  font-size: 2rem;
+}
+
+.welcome-container {
+  height: 100%;
+  width: auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding: 1px;
+}
+
+.welcome {
+  position: relative;
+  top: 80%;
+  left: 10%;
+  letter-spacing: 1em;
+  font-size: 4rem;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  color: white;
+
+
+    /*at start of animation*/
+    opacity: 0.5;
+    animation: welcomFade 5s;
+    -webkit-animation: welcomFade 5s;
+    -moz-animation: welcomFade 5s;
+    -o-animation: welcomFade 5s;
+    -ms-animation: welcomFade 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@-moz-keyframes welcomFade {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0; }
+}
+
+@-webkit-keyframes welcomFade {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes welcomFade {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes welcomFade {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0; }
+}
+
+@keyframes welcomFade {
+  0% { opacity: 0.5; }
+  50% { opacity: 0.7; }
+  100% { opacity: 0; }
+}
+
+
+
+.welcome-text p, .intro-text p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  opacity: 50%;
+}
+
+
+
+.welcome-text {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  text-align: right;
+}
+
+.welcome-text p {
+  padding: 5rem 5rem 3rem;
+  text-align: left;
+  font-size: 1.95rem;
+}
+
+
+
+.welcome-text h4 {
+  padding: 5rem 2rem 0rem;
+  font-size: 3rem;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  opacity: 50%;
+  z-index:2;
+  letter-spacing: 1rem;
+
+  text-transform: uppercase;
+ }
+
+ .welcome-text h2 {
+  padding: 0rem 0rem 5rem;
+  font-size: 6.5rem;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: .35em;
+
+  opacity: 50%;
+  z-index:2;
+  text-transform: uppercase;
+  /*background: -webkit-linear-gradient(#00CED1, #8A2BE2); #00FF7F*/
+  background: -webkit-linear-gradient(.25deg, #00CED1, #00FF7F 40%, #8A2BE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+
+.left {
+  text-align: left;
+  padding: 3rem;
+  opacity: 70%;
+}
+/*Parallax Scroll*/
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ContentContainer {
+  position: relative;
+  display: block;
+  z-index: 5;
+  background-color: black;
+  height: 100vh;
+  width: auto;
+
+}
+
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  transform: translateZ(-1px) scale(2);
+  background-color: black;
+}
+
+.phone {
+  position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: auto;
+    z-index:0;
+    transform: rotate(170deg);
+
+    opacity: 0;
+    animation: bg1 7s;
+    -webkit-animation: bg1 7s;
+    -moz-animation: bg1 7s;
+    -o-animation: bg1 7s;
+    -ms-animation: bg1 7s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@-moz-keyframes bg1 {
+  0% { -moz-transform: rotate(0deg);
+    opacity: 0.5; }
+  50% { -moz-transform: rotate(180deg);
+    opacity: 0.7; }
+  100% { -moz-transform: rotate(360deg);
+    opacity: 0; }
+}
+
+@-webkit-keyframes bg1 {
+  0% { -webkit-transform: rotate(0deg);
+    opacity: 0.5; }
+  50% { -webkit-transform: rotate(180deg);
+    opacity: 0.7; }
+  100% { -webkit-transform: rotate(360deg);
+    opacity: 0; }
+}
+
+@-o-keyframes bg1 {
+  0% { -o-transform: rotate(0deg);
+    opacity: 0.5; }
+  50% { -o-transform: rotate(180deg);
+    opacity: 0.7; }
+  100% { -o-transform: rotate(360deg);
+    opacity: 0; }
+}
+
+@-ms-keyframes bg1 {
+  0% { -ms-transform: rotate(0deg);
+    opacity: 0.5; }
+  50% { -ms-transform: rotate(180deg);
+    opacity: 0.7; }
+  100% { -ms-transform: rotate(360deg);
+    opacity: 0; }
+}
+
+@keyframes bg1 {
+  0% { -webkit-transform: rotate(0deg);
+    transform:rotate(0deg);
+    opacity: 0.5; }
+  50% { -webkit-transform: rotate(1800deg);
+    transform:rotate(180deg);
+    opacity: 0.7; }
+  100% { -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+    opacity: 0; }
+}
+
+
+
+
+
+#arrow {
+  position: absolute;
+    top: 500px;
+    left: 1000px;
+    width: 50px;
+    height: auto;
+    visibility: hidden;
+
+    opacity: 0;
+    animation: welcomFade 3s;
+    -webkit-animation: welcomFade 3s;
+    -moz-animation: welcomFade 3s;
+    -o-animation: welcomFade 3s;
+    -ms-animation: welcomFade 3s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+
+    animation-iteration-count: 2;
+}
+
+
+.phoneFlip {
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1000px;
+    height: auto;
+    z-index:-1;
+    transform: rotate(90deg);
+
+    opacity: 0;
+    animation: contentFade 7s;
+    -webkit-animation: contentFade 7s;
+    -moz-animation: contentFade 7s;
+    -o-animation: contentFade 7s;
+    -ms-animation: contentFade 7s;
+    animation-fill-mode: contentFade;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@-moz-keyframes contentFade {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.85; }
+}
+
+@-webkit-keyframes contentFade {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.85; }
+}
+
+@-o-keyframes contentFade {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.85; }
+}
+
+@-ms-keyframes contentFade {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.85; }
+}
+
+@keyframes contentFade {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0.85; }
+}
+
