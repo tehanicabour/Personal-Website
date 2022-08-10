@@ -31,7 +31,6 @@
   }
 }
 
-/*------------check up on whether can combine----------------*/
 #project-title {
   position: relative;
   opacity: 50%;
@@ -138,7 +137,6 @@ a{
 }
 
 
-/*-----------slightly change colors of gradients--------------*/
 .box1 {
   background-image: linear-gradient(135deg, #7bbef5 10%, #c9e6ab 100%);
 }
@@ -151,7 +149,6 @@ a{
   background-image: linear-gradient(135deg, #f690af 10%, #f6e05f 100%);
 }
 
-/*----------look into removing ul by imposing li a as only requirements for glow on hover?-----------*/
 .github-icon {
   position: relative;
   top: -60%;
